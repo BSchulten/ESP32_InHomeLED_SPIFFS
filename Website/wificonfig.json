@@ -1,0 +1,10 @@
+{
+    "checkval": "1",
+    "isDefault": "true",
+    "APSSID": "ESP32Test2",
+    "APPWD": "password",
+    "stationSSID": "0",
+    "stationPWD": "0",
+    "recieverID": "0",
+    "recieverNameTag": "0"
+}

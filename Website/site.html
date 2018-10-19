@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="jscolor.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src = "js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  
+<div class="container">
+    <div class = "container">
+      <div class ="row"  >
+      </div>
+        <div class = "row">
+           <div class = "col-*-*">
+             <input type="text" id="messageinput" name="Message" style="margin-top:20px">
+             <button type="button" id="button1">Send</button>
+           </div>
+           <div class = "col-*-*">
+             <input class="jscolor {onFineChange:'sendColor(this)'}" value="cc66ff" style="margin-top:20px"> 
+              <div id="output"></div>
+           </div>
+        </div>
+        <form id="modeselct" onchange="onRadioChange();">
+          <input type="radio" name="MODE" value="4" id="radio_solid" > SolidColor<br>
+          <input type="radio" name="MODE" value="1" id="radio_rainbow"> Rainbow<br>
+          <input type="radio" name="MODE" value="2"id="radio_runner"> Runninglight<br>
+          <input type="radio" name="MODE" value="3" id="radio_night"> Nightlamp<br>
+          <input type="radio" name="MODE" value="0" id="radio_off"> OFF<br>
+        </form>
+     </div>
+     <div class = "row">
+        <input type="range" title="jsdfs" min="1" max="100" value="50" class="slider" id="myRange" style=" width: 300px; height: 45px;"> 
+     </div>
+     <div class = "row">
+      <input type="range" min="1" max="100" value="50" class="slider" id="myRange" style=" width: 300px;height: 45px;"> 
+   </div>
+   <div class = "row">
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange" style=" width: 300px;height: 45px;"> 
+ </div>
+
+</div>
+<script src="script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<header><title>InHomeLED WIfi Config</title></header>
+<body>
+Please Enter the Data and click Submit. Then restart ESP for setings to take effect!
+
+<form id="wificonfigform" onSubmit = "event.preventDefault(); formToJson(this);">
+    <label class="label">Is Default Setting?</label>
+    <input type = "checkbox" name = "isdefault"/>
+    <br/>
+    <label class="label">Network Name</label>
+    <input type = "text" name = "ssid"/>
+    <br/>
+    <label>Password</label>
+    <input type = "text" name = "pass"/>
+    <br/>
+    <input type="submit" value="Submit">
+</form>
+
+<input type="text" id="messageinput" name="Message" style="margin-top:20px">
+<button type="button" id="button1">Send</button>
+<div id="output"></div>
+
+<script src="configscript.js"></script> 
+</body>
+</html>
