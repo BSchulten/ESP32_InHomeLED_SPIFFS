@@ -54,7 +54,7 @@ function sendColor(jscolor){
 }
 
 function getJsonString(){
-  var jsonstring = "{MODE:" +  mode + ",COLOR:" + solidColor + "}";
+  var jsonstring = "{MODE:" +  mode + ",COMMAND:" + "InputTransmit" + ",COLOR:" + solidColor + "}";
   return jsonstring;
 }
 function sendJSON(){
@@ -69,6 +69,10 @@ function sendJSON(){
    , 50);
 }
 
+window.onbeforeunload = function() {
+  websocket.onclose = function () {}; // disable onclose handler first
+  websocket.close();
+};
 
 var prefix = "ws:";
 var host = window.location.host;

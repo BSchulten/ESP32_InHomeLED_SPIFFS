@@ -3,11 +3,11 @@
     "LEDVariant": "WS",
     "numberLEDS": "10",
     "checkval": "1",
-    "isDefault": "false",
-    "APSSID": "ESP32Test3",
+    "isDefault": "true",
+    "APSSID": "InHomeLEDESP32",
     "APPWD": "password",
-    "stationSSID": "Imperio Wifi!",
-    "stationPWD": "Sprachfoerderung",
+    "stationSSID": "0",
+    "stationPWD": "0",
     "recieverID": "0",
     "recieverNameTag": "0"
 }

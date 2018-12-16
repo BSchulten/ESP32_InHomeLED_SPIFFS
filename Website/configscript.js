@@ -40,12 +40,28 @@ function formToJson(form){
   var ssid = form.ssid.value;   
   var pass = form.pass.value;
   var isdefault = form.isdefault.checked;
+  if (form.isMaster.checked){
+      var ismaster = "MASTER";
+  }
+  else{
+      var ismaster = "SLAVE";
+  }
+  if (form.isWSLed.checked){
+    var isws = "WS";
+  }
+  else{
+    var isws = "RGB";
+  }
+  var numleds = form.leds.value;
    
   var jsonFormInfo = JSON.stringify({
-      command:"config",
+      COMMAND:"config",
       stationPWD:pass, 
       stationSSID: ssid,
-      isDefault: isdefault
+      isDefault: isdefault,
+      isMaster: ismaster,
+      LEDVariant: isws,
+      numberLEDS: numleds
   });
   websocket.send(jsonFormInfo);
   sendJSON_possible = false;
