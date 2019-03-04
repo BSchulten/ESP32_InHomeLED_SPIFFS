@@ -40,6 +40,7 @@ function formToJson(form){
   var ssid = form.ssid.value;   
   var pass = form.pass.value;
   var isdefault = form.isdefault.checked;
+  var features = form.extrafeatures.value;
   if (form.isMaster.checked){
       var ismaster = "MASTER";
   }
@@ -61,7 +62,8 @@ function formToJson(form){
       isDefault: isdefault,
       isMaster: ismaster,
       LEDVariant: isws,
-      numberLEDS: numleds
+      numberLEDS: numleds,
+      extrafeatures:features
   });
   websocket.send(jsonFormInfo);
   sendJSON_possible = false;

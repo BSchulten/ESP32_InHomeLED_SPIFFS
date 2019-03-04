@@ -23,7 +23,7 @@ function onRadioChange(){
   }
 
   if (document.getElementById("radio_night").checked){
-    mode = 3;
+    mode = 1;
   }
 
   if (document.getElementById("radio_runner").checked){
@@ -31,7 +31,7 @@ function onRadioChange(){
   }
 
   if (document.getElementById("radio_rainbow").checked){
-    mode = 1;
+    mode = 3;
   }
 
   if (document.getElementById("radio_off").checked){

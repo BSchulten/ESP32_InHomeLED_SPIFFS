@@ -9,5 +9,6 @@
     "stationSSID": "0",
     "stationPWD": "0",
     "recieverID": "0",
-    "recieverNameTag": "0"
+    "recieverNameTag": "0",
+    "extrafeatures": "0"
 }
