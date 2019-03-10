@@ -1,7 +1,8 @@
 
 var mode;
 var solidColor;
-
+var date_current;
+var lastmillis = 0;
 
 var sendJSON_possible = true;
 
@@ -31,7 +32,7 @@ function onRadioChange(){
   }
 
   if (document.getElementById("radio_rainbow").checked){
-    mode = 3;
+    mode = 5;
   }
 
   if (document.getElementById("radio_off").checked){
@@ -50,7 +51,13 @@ function writeToScreen(message)
 
 function sendColor(jscolor){
   solidColor = jscolor;
-  sendJSON();
+  date_current = Date.now();
+
+  if (lastmillis < (date_current + 10)){
+      lastmillis = date_current;
+      sendJSON();
+  };
+  
 }
 
 function getJsonString(){
